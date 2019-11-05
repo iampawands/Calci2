@@ -56,7 +56,7 @@ public class AppTest
         public void testDivideByZero() {
         int a = 15;
         int b = 0;
-        objCalcUnderTest.div(a, b);
+        app.div(a, b);
     }
   
 }
