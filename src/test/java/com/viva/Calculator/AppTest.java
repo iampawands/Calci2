@@ -52,6 +52,11 @@ public class AppTest
 	public void divFail() {
 		assertNotEquals(1, app.div(24, 12));
 	}
-	
+	@Test(expected = ArithmeticException.class)
+        public void testDivideByZero() {
+        int a = 15;
+        int b = 0;
+        objCalcUnderTest.div(a, b);
+    }
   
 }
